@@ -1,0 +1,5 @@
+使用说明：
+用户需要使用一个或者多个PID时可通过结构体PID_type_def在主函数中定义多个PID名称，比如：PID_type_def PID1;
+                                                                                PID_type_def PID2;
+                                                                                .................;
+接着使用PID_Init()初始化PID，然后用户可对PID1和PID2等结构体里需要用户初始化配置的变量进行配置，最后通过float PID_Calc()计算PID的输出。
